@@ -1,7 +1,7 @@
 # ngdemo
 
 Made during my self-education in [Angular](https://angular.io/) and [Angular Material](https://material.angular.io/)<br/>
-(c) Copyright [Anton Lozovskyi](https://www.linkedin.com/in/anton-lozovskyi-84692740/) 2022<br/>
+(c) Copyright [Anton Lozovskyi](https://www.linkedin.com/in/anton-lozovskyi-84692740/), 2022<br/>
 Just for fun
 
 Requires [Node.js](https://nodejs.org/) with installed modules: `npm (Node Package Manager)` and `@angular/cli`
