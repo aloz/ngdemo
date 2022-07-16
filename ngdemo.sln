@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32708.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "ngdemo", "ngdemo\ngdemo.esproj", "{2C42AA63-21B5-4F89-96DF-A6F1AC6241E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C42AA63-21B5-4F89-96DF-A6F1AC6241E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C42AA63-21B5-4F89-96DF-A6F1AC6241E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C42AA63-21B5-4F89-96DF-A6F1AC6241E6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2C42AA63-21B5-4F89-96DF-A6F1AC6241E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C42AA63-21B5-4F89-96DF-A6F1AC6241E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C42AA63-21B5-4F89-96DF-A6F1AC6241E6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C488C22-7233-4ADC-84DA-6F00D3C4543F}
+	EndGlobalSection
+EndGlobal
