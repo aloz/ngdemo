@@ -1,12 +1,12 @@
 # ngdemo
 
-Made during my self-education in `Angular` and `Angular Material`.<br/>
+Made during my self-education in [Angular](https://angular.io/) and [Angular Material](https://material.angular.io/).<br/>
 (c) Copyright Anton Lozovskyi, 2022<br/>
 Just for fun
 
-Requires `Node.js` with installed modules: `nmp (Node Package Manager)` and `@angular/cli`.
+Requires [Node.js](https://nodejs.org/) with installed modules: `nmp (Node Package Manager)` and `@angular/cli`.
 
-On first start all the required `Angular` and `Node.js` dependencies are downloaded by npm.
+On first start all the required [Angular](https://angular.io/) and [Node.js](https://nodejs.org/) dependencies are downloaded by 'npm'.
 
 It is automated in `Visual Studio` if you have properly setup your environment.
 
