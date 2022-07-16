@@ -4,11 +4,11 @@ Made during my self-education in `Angular` and `Angular Material`.<br/>
 (c) Copyright Anton Lozovskyi, 2022<br/>
 Just for fun
 
-Requires Node.js with installed modules: nmp (Node Package Manager) and @angular/cli.
+Requires `Node.js` with installed modules: `nmp (Node Package Manager)` and `@angular/cli`.
 
-On first start all the required Angular and Node.js dependencies are downloaded by npm.
+On first start all the required `Angular` and `Node.js` dependencies are downloaded by npm.
 
-It is automated in Visual Studio if you have properly setup your environment.
+It is automated in `Visual Studio` if you have properly setup your environment.
 
 Below is default readme.md content.
 
