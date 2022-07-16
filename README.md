@@ -4,6 +4,12 @@ Made during my self-education in `Angular` and `Angular Material`.<br/>
 (c) Copyright Anton Lozovskyi, 2022<br/>
 Just for fun
 
+Requires Node.js with installed modules: nmp (Node Package Manager) and @ngular/cli.
+
+On first start all the required Angular and Node.js dependencies are downloaded by npm.
+
+It is automated in Visual Studio if you have properly setup your environment.
+
 Below is default readme.md content.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.5.
