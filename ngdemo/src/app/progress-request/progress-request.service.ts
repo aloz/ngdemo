@@ -12,7 +12,7 @@ export class ProgressRequestService {
   isProgressObservable = this._isProgress.asObservable();
 
   show() {
-    this._isProgress.next(true);;
+    this._isProgress.next(true);
   }
 
   hide() {
