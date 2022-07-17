@@ -7,5 +7,5 @@ export class ProgressRequestService {
 
   constructor() { }
 
-  isStyleDisplayBlock: boolean = true;
+  isStyleDisplayBlock: boolean = false;
 }
