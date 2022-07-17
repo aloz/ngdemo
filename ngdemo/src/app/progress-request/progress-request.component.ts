@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ProgressRequestService } from './progress-request.service';
 
 @Component({
@@ -6,10 +6,15 @@ import { ProgressRequestService } from './progress-request.service';
   templateUrl: './progress-request.component.html',
   styleUrls: ['./progress-request.component.css']
 })
-export class ProgressRequestComponent {
+export class ProgressRequestComponent implements OnInit {
 
   constructor(private svc: ProgressRequestService) { }
 
-  styleDisplay: string = this.svc.isStyleDisplayBlock ? "block" : "none";
+  styleDisplay: string = "none";
 
+  ngOnInit(): void {
+    this.svc.isProgressObservable.subscribe(isProgress => {
+      this.styleDisplay = isProgress ? 'block' : 'none';
+    });
+    }
 }
