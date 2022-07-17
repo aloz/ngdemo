@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ProgressRequestService } from '../progress-request/progress-request.service';
+import { ProgressRequestService } from '../';
 
 
 @Component({
