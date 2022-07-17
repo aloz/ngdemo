@@ -45,7 +45,7 @@
 /* Workspace */
 
 .workspace.root {
-  min-height: calc(100% - var(--aloz-footer-heigtht));
+  min-height: calc(100% - var(--aloz-footer-height));
   padding-top: var(--aloz-toolbar-height);
 }
 
@@ -74,7 +74,7 @@
   .footer {
     position: relative;
     overflow: hidden;
-    height: var(--aloz-footer-heigtht);
+    height: var(--aloz-footer-height);
     background-color: #d0d0d0;
     display: flex;
     justify-content: flex-end;
