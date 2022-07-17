@@ -13,17 +13,17 @@ export class ProgressRequestComponent implements OnInit, OnDestroy {
 
   styleDisplay: string = "none";
 
-  private _isProgressSubscr: any;
+  private _isProgressObserver: any;
 
   ngOnInit(): void {
-    this._isProgressSubscr = this._progressReqSvc.isProgressObservable.subscribe(isProgress => {
+    this._isProgressObserver = this._progressReqSvc.isProgressObservable.subscribe(isProgress => {
       this.styleDisplay = isProgress ? 'block' : 'none';
     });
   }
 
   ngOnDestroy(): void {
     console.log('ProgressRequestService unsubscribed');
-    const sub = this._isProgressSubscr as Subscription;
+    const sub = this._isProgressObserver as Subscription;
     sub.unsubscribe();
   }
 
