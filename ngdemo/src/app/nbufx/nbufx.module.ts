@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { NbufxRoutingModule } from './nbufx-routing.module';
 import { NbufxComponent } from './nbufx.component';
 
+import { MatButtonModule } from '@angular/material/button';
+
 
 
 @NgModule({
@@ -12,7 +14,9 @@ import { NbufxComponent } from './nbufx.component';
   ],
   imports: [
     CommonModule,
-    NbufxRoutingModule
+    NbufxRoutingModule,
+
+    MatButtonModule
   ]
 })
 export class NbufxModule { }

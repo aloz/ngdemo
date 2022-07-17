@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProgressRequestService } from '../progress-request/progress-request.service';
 
 
 @Component({
@@ -8,6 +9,16 @@ import { Component } from '@angular/core';
 })
 export class NbufxComponent {
 
-  constructor() { }
+  constructor(private _progressReqSvc: ProgressRequestService) { }
+
+  showPrb(): void {
+    console.log('showPrb');
+    this._progressReqSvc.show();
+  }
+
+  hidePrb(): void {
+    console.log('hidePrb');
+    this._progressReqSvc.hide();
+  }  
 
 }

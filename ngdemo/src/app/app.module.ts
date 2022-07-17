@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ProgressRequestComponent } from './progress-request/progress-request.component';
 
 import { MatSliderModule } from '@angular/material/slider'
 import { MatIconModule } from '@angular/material/icon';
@@ -12,10 +13,13 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+
 
 @NgModule({
   declarations: [
     AppComponent,
+    ProgressRequestComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,6 +34,7 @@ import { MatCardModule } from '@angular/material/card';
     MatToolbarModule,
     MatSidenavModule,
     MatCardModule,
+    MatProgressBarModule,
 
   ],
   providers: [],

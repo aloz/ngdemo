@@ -5,7 +5,7 @@
 }
 
   .toolbar.toolbar-fixed {
-    z-index: 65535;
+    z-index: var(--aloz-zindex-toolbar);
     position: fixed;
     left: 0;
     top: 0;
@@ -55,7 +55,7 @@
 
 .leftmenu-item {
   width: 100%;
-  margin-bottom: 16px;
+  margin-bottom: var(--aloz-gap);
 }
 
 .leftmenu-item-active {
@@ -71,15 +71,15 @@
 
 /* Footer */
 
-  .footer {
-    position: relative;
-    overflow: hidden;
-    height: var(--aloz-footer-height);
-    background-color: #d0d0d0;
-    display: flex;
-    justify-content: flex-end;
-    z-index: 0;
-  }
+.footer {
+  position: relative;
+  overflow: hidden;
+  height: var(--aloz-footer-height);
+  background-color: #d0d0d0;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 0;
+}
 
   .footer:before {
     content: ' ';
@@ -90,8 +90,7 @@
     width: 100%;
     height: 100%;
     opacity: 0.6;
-    background: url(/assets/images/logos/angular/angular_whiteTransparent_withMargin.png) top 0 left 0 repeat,
-        url(/assets/images/logos/angular/angular_whiteTransparent_withMargin.png) top 80px left 160px repeat;
+    background: url(/assets/images/logos/angular/angular_whiteTransparent_withMargin.png) top 0 left 0 repeat, url(/assets/images/logos/angular/angular_whiteTransparent_withMargin.png) top 80px left 160px repeat;
     background-size: 64px auto;
     z-index: -1;
   }
