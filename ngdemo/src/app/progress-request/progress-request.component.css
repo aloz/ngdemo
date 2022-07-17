@@ -1,0 +1,6 @@
+#progress-request {
+  z-index: var(--aloz-zindex-progress-request);
+  position: fixed;
+  top: 0;
+  left: 0px;
+}

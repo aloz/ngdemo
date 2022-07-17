@@ -12,4 +12,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
   --aloz-toolbar-height: 64px;
   --aloz-footer-height: calc(64px - 16px);
   --aloz-footer-margin-right: calc(16px / 2);
+  --aloz-zindex-toolbar: 65535;
+  --aloz-zindex-progress-request: 65536;
 }
