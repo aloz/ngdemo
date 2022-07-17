@@ -5,9 +5,11 @@
     </button>
 
     <div class="toolbar container-caption">
-      <div class="toolbar container-caption-image">
-        <img src="../assets/images/logos/angular/anglogo.png" />
-      </div>
+      <a href="/">
+        <div class="toolbar container-caption-image">
+          <img src="../assets/images/logos/angular/anglogo.png" />
+        </div>
+      </a>
       <div>ngular demos</div>
     </div>
 
@@ -40,17 +42,31 @@
 
   <mat-sidenav id="sidenav" #sidenav mode="side" opened="false">
     <div class="workspace leftmenu">
-      <span>11111111111111111111111111</span>
-      <div>2</div>
-      <div>3</div>
-      <div>4</div>
-      <div>5</div>
-      <div>6</div>
-      <div>7</div>
-      <div>8</div>
-      <div>9</div>
-      <div>10</div>
-      <div>11</div>
+
+      <mat-card class="mat-elevation-z8">
+
+        <mat-card-content>
+
+          <div>
+            <a mat-raised-button class="leftmenu-item" routerLinkActive="leftmenu-item-active" (click)="sidenav.toggle()"
+               routerLink='nbufx'>NBU Foreing Exchange Rates</a>
+          </div>
+
+          <div>
+            <a mat-raised-button class="leftmenu-item" routerLinkActive="leftmenu-item-active" (click)="sidenav.toggle()"
+               routerLink='fm'>Fake Module</a>
+          </div>
+
+          <div>
+            <a mat-raised-button class="leftmenu-item" routerLinkActive="leftmenu-item-active" (click)="sidenav.toggle()"
+               routerLink='xxx'>Wrong link</a>
+          </div>
+
+        </mat-card-content>
+
+
+      </mat-card>
+
     </div>
   </mat-sidenav>
 
@@ -58,105 +74,18 @@
 
     <div class="workspace content">
 
-      <div class="workspace topmargin">&nbsp;</div>
-
-      <a mat-button href="https://www.google.com/" target="_blank">Link</a>
-      <mat-divider></mat-divider>
-      <mat-slider min="1" max="100" step="1" value="10"></mat-slider>
-
-      <!--
-
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-    <div>11</div>
-
-      -->
+      <router-outlet></router-outlet>
 
     </div>
 
-    <footer>
-      <div class="footer">
-        <div class="thetext">
-          Made during my self-education<br/>
-          in Angular and Angular Material<br />
-          (c) Copyright Anton Lozovskyi, 2022<br/>
-          Just for fun
-        </div>
-      </div>
-    </footer>
-
   </mat-sidenav-content>
 </mat-sidenav-container>
+
+<footer>
+  <div class="footer">
+    <div class="thetext">
+      Made just for fun during my self-education in Angular and Angular Material<br />
+      (c) Copyright Anton Lozovskyi, 2022
+    </div>
+  </div>
+</footer>

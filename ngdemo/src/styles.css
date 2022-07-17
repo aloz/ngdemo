@@ -10,5 +10,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
 :root {
   --aloz-gap: 16px;
   --aloz-toolbar-height: 64px;
-  --aloz-footer-heigtht: calc(64px * 2);
+  --aloz-footer-heigtht: calc(64px - 16px);
+  --aloz-footer-margin-right: calc(16px / 2);
 }
