@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +8,7 @@ export class ProgressRequestService {
 
   constructor() { }
 
-  private _isProgress = new BehaviorSubject<boolean>(false);
+  private _isProgress = new Subject();
   isProgressObservable = this._isProgress.asObservable();
 
   show() {
