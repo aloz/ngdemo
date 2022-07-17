@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Subscription } from 'rxjs';
+import { debounce, debounceTime, distinctUntilChanged, shareReplay, Subscription } from 'rxjs';
 import { ProgressRequestService } from './progress-request.service';
 
 @Component({
@@ -16,13 +16,17 @@ export class ProgressRequestComponent implements OnInit, OnDestroy {
   private _isProgressObserver: any;
 
   ngOnInit(): void {
-    this._isProgressObserver = this._progressReqSvc.isProgressObservable.subscribe(isProgress => {
+    this._isProgressObserver = this._progressReqSvc.isProgressObservable.pipe(
+
+      debounceTime(200),
+      distinctUntilChanged()
+
+    ).subscribe(isProgress => {
       this.styleDisplay = isProgress ? 'block' : 'none';
     });
   }
 
   ngOnDestroy(): void {
-    console.log('ProgressRequestService unsubscribed');
     const sub = this._isProgressObserver as Subscription;
     sub.unsubscribe();
   }
