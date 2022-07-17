@@ -9,16 +9,16 @@ import { ProgressRequestService } from '../progress-request/progress-request.ser
 })
 export class NbufxComponent {
 
-  constructor(private progressReqSvc: ProgressRequestService) { }
+  constructor(private _progressReqSvc: ProgressRequestService) { }
 
   showPrb(): void {
     console.log('showPrb');
-    this.progressReqSvc.show();
+    this._progressReqSvc.show();
   }
 
   hidePrb(): void {
     console.log('hidePrb');
-    this.progressReqSvc.hide();
+    this._progressReqSvc.hide();
   }  
 
 }

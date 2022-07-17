@@ -8,14 +8,14 @@ export class ProgressRequestService {
 
   constructor() { }
 
-  private isProgress = new BehaviorSubject<boolean>(false);
-  isProgressObservable = this.isProgress.asObservable();
+  private _isProgress = new BehaviorSubject<boolean>(false);
+  isProgressObservable = this._isProgress.asObservable();
 
   show() {
-    this.isProgress.next(true);;
+    this._isProgress.next(true);;
   }
 
   hide() {
-    this.isProgress.next(false);;
+    this._isProgress.next(false);;
   }
 }

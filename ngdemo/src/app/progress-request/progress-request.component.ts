@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { ProgressRequestService } from './progress-request.service';
 
 @Component({
@@ -6,15 +7,24 @@ import { ProgressRequestService } from './progress-request.service';
   templateUrl: './progress-request.component.html',
   styleUrls: ['./progress-request.component.css']
 })
-export class ProgressRequestComponent implements OnInit {
+export class ProgressRequestComponent implements OnInit, OnDestroy {
 
-  constructor(private svc: ProgressRequestService) { }
+  constructor(private _progressReqSvc: ProgressRequestService) { }
 
   styleDisplay: string = "none";
 
+  private _isProgressSubscr: any;
+
   ngOnInit(): void {
-    this.svc.isProgressObservable.subscribe(isProgress => {
+    this._isProgressSubscr = this._progressReqSvc.isProgressObservable.subscribe(isProgress => {
       this.styleDisplay = isProgress ? 'block' : 'none';
     });
-    }
+  }
+
+  ngOnDestroy(): void {
+    console.log('ProgressRequestService unsubscribed');
+    const sub = this._isProgressSubscr as Subscription;
+    sub.unsubscribe();
+  }
+
 }
