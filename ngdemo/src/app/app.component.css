@@ -62,6 +62,10 @@
   background-color: burlywood;
 }
 
+.leftmenu-item-icon {
+  margin-right: calc(var(--aloz-gap)/2);
+}
+
 .workspace.content {
   /* background-color: dimgray; */
   padding: var(--aloz-gap);

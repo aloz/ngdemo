@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { NbufxComponent } from './nbufx.component';
+import { TabsComponent } from './';
 
-const routes: Routes = [{ path: '', component: NbufxComponent }];
+const routes: Routes = [{ path: '', component: TabsComponent }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class NbufxRoutingModule { }
+export class DxSummitRoutingModule { }

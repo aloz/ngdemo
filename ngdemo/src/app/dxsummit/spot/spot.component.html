@@ -1,0 +1,48 @@
+<div class="gap-top"></div>
+
+<p>This is realtime radio-amateur data from
+  <a href="http://dxsummit.fi" target="_blank">dxsummit.fi</a>
+</p>
+<p>Auto refresh in {{ secToRefresh }} seconds</p>
+
+<mat-form-field class="filter-input">
+  <mat-label>Filter</mat-label>
+  <input matInput (keyup)="applyFilter($event)" placeholder="Type any data">
+  <mat-icon matPrefix>search</mat-icon>
+</mat-form-field>
+
+
+<table mat-table [dataSource]="matDataSource" [trackBy]="trackRows" class="mat-elevation-z8 table">
+
+  <!-- cell row context example
+
+  <ng-container matColumnDef="de_call">
+    <th mat-header-cell *matHeaderCellDef>de_call</th>
+    <ng-container *matCellDef="let e; let odd=odd">
+      <td mat-cell [class.odd-row]="odd">
+        {{ e.de_call }}
+      </td>
+    </ng-container>
+  </ng-container>
+
+  -->
+
+  <mat-text-column headerText="Spotter" name="de_call"></mat-text-column>
+  <mat-text-column headerText="Freq." name="frequency"></mat-text-column>
+  <mat-text-column headerText="DX" name="dx_call"></mat-text-column>
+  <mat-text-column headerText="Time" name="time" [dataAccessor]="formatRowDate"></mat-text-column>
+  <mat-text-column headerText="Info" name="info"></mat-text-column>
+  <mat-text-column headerText="Country" name="dx_country"></mat-text-column>
+
+  <tr mat-header-row *matHeaderRowDef="columnNames"></tr>
+
+  <ng-container *matRowDef="let myRowData; columns: columnNames; let odd=odd">
+    <tr mat-row class="animated-row" [class.odd-row]="odd"></tr>
+  </ng-container>
+
+</table>
+
+<mat-paginator class="mat-elevation-z8" [pageSizeOptions]="[10, 20, 100]"
+               showFirstLastButtons
+               aria-label="Select page of periodic elements">
+</mat-paginator>
