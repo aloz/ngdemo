@@ -22,7 +22,7 @@ div.gap-top {
 
 @keyframes rows-animation {
   from {
-    background-color: yellow;
+    background-color: lightsalmon;
   }
 
   to {
