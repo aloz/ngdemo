@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 
-import { DxSummitRoutingModule } from './';
-import { SpotComponent } from './';
+import { DxSummitRoutingModule } from './dxsummit-routing.module';
+import { SpotComponent } from './spot/spot.component';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
