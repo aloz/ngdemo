@@ -1,5 +1,8 @@
-/* Toolbar */
+#top-root {
+  min-width: 255px;
+}
 
+/* Toolbar */
 .toolbar {
   display: flex;
 }
@@ -108,6 +111,11 @@
   text-align: right;
   font-weight: bold;
   font-size: x-small;
+  text-shadow: 1px 1px 1px white;
+}
+
+.thetext-icon {
+  transform: scale(0.5);
   text-shadow: 1px 1px 1px white;
 }
 
