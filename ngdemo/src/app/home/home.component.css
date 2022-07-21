@@ -1,0 +1,53 @@
+.top-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.top-header {
+  margin: auto;
+  margin-bottom: calc(var(--aloz-gap) / 2);
+}
+
+.first-header {
+  margin: auto;
+  text-align: center;
+}
+
+.last-header {
+  margin: auto;
+  margin-bottom: calc(var(--aloz-gap));
+}
+
+.last-header-p {
+  margin: auto;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: calc(var(--aloz-gap));
+}
+
+.cards-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+.learning-path-card {
+  width: 30%;
+  margin-bottom: var(--aloz-gap);
+}
+
+.reading-documentation-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.reading-documentation-link {
+  margin: var(--aloz-gap);
+}
