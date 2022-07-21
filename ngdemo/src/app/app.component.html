@@ -51,21 +51,30 @@
 
           <div>
             <a mat-raised-button class="leftmenu-item" routerLinkActive="leftmenu-item-active" (click)="sidenav.toggle()"
+               routerLink='opensky'>
+              {{ 'OpenSky realtime data' | titlecase }}
+            </a>
+          </div>
+
+          <div>
+            <a mat-raised-button class="leftmenu-item" routerLinkActive="leftmenu-item-active" (click)="sidenav.toggle()"
                routerLink='dxsummit'>
-              DX Summit realtime data
+              {{ 'DX Summit realtime data' | titlecase }}
             </a>
           </div>
 
           <div>
             <a mat-raised-button class="leftmenu-item" routerLinkActive="leftmenu-item-active" (click)="sidenav.toggle()"
                routerLink='fm'>
-              Fake Module
+              {{ 'Fake module' | titlecase }}
             </a>
           </div>
 
           <div>
             <a mat-raised-button class="leftmenu-item" routerLinkActive="leftmenu-item-active" (click)="sidenav.toggle()"
-               routerLink='xxx'>Wrong link</a>
+               routerLink='xxx'>
+              {{ 'Wrong link' | titlecase }}
+            </a>
           </div>
 
         </mat-card-content>
