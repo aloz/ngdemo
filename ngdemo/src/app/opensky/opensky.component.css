@@ -1,15 +1,3 @@
-div.gap-top {
-  height: var(--aloz-gap);
-}
-
-.gap-tab-icon {
-  margin-right: var(--aloz-gap);
-}
-
-.margin-general {
-  margin: var(--aloz-gap);
-}
-
 .table {
   width: 100%;
 }
@@ -38,13 +26,17 @@ div.gap-top {
   width: 100%;
 }
 
-.tools-container {
+.tools-card {
+    margin-bottom: var(--aloz-gap);
+}
+
+.tools-controls-container {
   display: flex;
   align-items: baseline;
   width: 100%;
 }
 
-.tools-filter {
+.tools-controls-filter {
   margin-left: var(--aloz-gap);
   width: 100%;
 }

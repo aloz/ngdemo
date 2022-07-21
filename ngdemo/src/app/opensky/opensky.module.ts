@@ -8,7 +8,8 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatFormFieldModule, } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { MatButtonModule } from '@angular/material/button'; 
+import { MatButtonModule } from '@angular/material/button';
+import { MatCard, MatCardModule } from '@angular/material/card';
 
 import { OpenskyRoutingModule } from './opensky-routing.module';
 import { OpenskyComponent } from './opensky.component';
@@ -29,6 +30,7 @@ import { OpenskyComponent } from './opensky.component';
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
+    MatCardModule,
 
     OpenskyRoutingModule,
   ]

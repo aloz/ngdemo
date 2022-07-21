@@ -15,3 +15,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
   --aloz-zindex-toolbar: 65535;
   --aloz-zindex-progress-request: 65536;
 }
+
+.text-align-justify {
+  text-align: justify;
+}

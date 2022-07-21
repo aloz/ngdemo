@@ -1,24 +1,30 @@
-<div class="gap-top"></div>
+<mat-card class="tools-card">
+  <mat-card-content>
+    <p class="text-align-justify">
+      This is the current aircrafts flying over US provided by <a href="https://openskynetwork.github.io/opensky-api/rest.html" target="_blank">opensky-network.org</a>.
+      The current API limitation is 1000 requests per day.
+      All other aviations API I found are too expensive or provide too low requests quota for free.
+      If requests limit exceeded - you will be notified about that.
+    </p>
+    <div class="tools-controls-container">
 
-<p>
-  This is realtime flight dataset from
-  <a href="https://opensky-network.org/" target="_blank">opensky-network.org</a>
-</p>
+      <div>
+        <button mat-raised-button (click)="beginHttpRequest()">Refresh</button>
+      </div>
 
-<div class="tools-container">
+      <div class="tools-controls-filter">
+        <mat-form-field class="filter-input" appearance="fill">
+          <mat-label>Filter</mat-label>
+          <input matInput (keyup)="applyFilter($event)" placeholder="Type any data">
+          <mat-icon matPrefix>search</mat-icon>
+        </mat-form-field>
+      </div>
+    </div>
 
-  <div>
-    <button mat-raised-button (click)="beginHttpRequest()">Refresh</button>
-  </div>
+  </mat-card-content>
 
-  <div class="tools-filter">
-    <mat-form-field class="filter-input" appearance="fill">
-      <mat-label>Filter</mat-label>
-      <input matInput (keyup)="applyFilter($event)" placeholder="Type any data">
-      <mat-icon matPrefix>search</mat-icon>
-    </mat-form-field>
-  </div>
-</div>
+</mat-card>
+
 
 <table mat-table [dataSource]="matTableDataSource" [trackBy]="trackRows" class="mat-elevation-z8 table">
 

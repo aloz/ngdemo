@@ -64,8 +64,8 @@ export class OpenskyComponent implements OnInit, AfterViewInit {
     this._progressRequestService.show();
 
     this._httpcli.get<openSkyStateWrapper>(
-      'https://opensky-network.org/api/states/all?lamin=18.91619&lomin=-171.791110603&lamax=71.3577635769&lomax=-66.96466&extended=1',
-      // '/assets/states1.json', // TODO
+      // 'https://opensky-network.org/api/states/all?lamin=18.91619&lomin=-171.791110603&lamax=71.3577635769&lomax=-66.96466&extended=1',
+      '/assets/states1.json', // TODO
       { headers: this._httpHeaders }
     ).subscribe(resp => {
       this._dataSource = resp.states.map((item => new openSkyStateView(<any>item)));
