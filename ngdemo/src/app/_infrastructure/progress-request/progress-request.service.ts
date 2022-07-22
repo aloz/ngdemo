@@ -16,6 +16,6 @@ export class ProgressRequestService {
   }
 
   hide() {
-    this._isProgress.next(false);;
+    this._isProgress.next(false);
   }
 }

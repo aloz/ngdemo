@@ -4,7 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProgressRequestComponent } from './';
+import { ProgressRequestComponent, DialogUpdateComponent, LiveUpdateComponent } from './';
 
 import { MatSliderModule } from '@angular/material/slider'
 import { MatIconModule } from '@angular/material/icon';
@@ -14,12 +14,19 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatDialogModule } from '@angular/material/dialog';
+
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ProgressRequestComponent,
+    LiveUpdateComponent,
+    DialogUpdateComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,6 +42,14 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     MatSidenavModule,
     MatCardModule,
     MatProgressBarModule,
+    MatDialogModule,
+
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    }),
 
   ],
   providers: [],
